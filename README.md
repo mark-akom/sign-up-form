@@ -1,0 +1,1 @@
+This is a sign up form project using HTML and CSS. This project is intended to sharpen and also test my knowledge of forms in html, styling of forms and also the use of other css properties.
