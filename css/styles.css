@@ -103,7 +103,7 @@ a {
 }
 
 .header-section > p {
-    width: 71%;
+    width: 600px;
     font-size: 1.3rem;
     line-height: 1.2;
     color: var(--header-text-color);
@@ -112,7 +112,7 @@ a {
 .line {
     display: block;
     height: 1px;
-    width: 80%;
+    width: 650px;
     background-color: #e6e6e6;
     margin-bottom: 40px;
 }
