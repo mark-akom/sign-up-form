@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+}
+
+input,
+button,
+label {
+    font-family: inherit;
+}
+
+:root {
+    --link-color: blue;
+    --heading-color: black;
+    --form-heading-color: #1a1a1a;
+    --header-text-color: #333333;
+    --bg-color: #38335c;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+
+.img-section {
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    width: 37%;
+    background: url(/images/bg-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.odin-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 12px;
+    padding: 12px 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 8%;
+}
+
+.odin-logo > img {
+    display: block;
+    width: 10%;
+}
+
+.odin-logo > h2 {
+    font-size: 2.1rem;
+    color: white;
+    font-weight: 500;
+}
+
+.img-section > p {
+    position: absolute;
+    bottom: 4%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+}
+
+.img-section > p > a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* styling of the form section of the page */
+
+.form-section {
+    padding: 80px 0;
+    width: 100%;
+    padding-left: calc(37% + 80px);
+}
+
+.header-section {
+    /* padding-top: 72px; */
+    padding-bottom: 40px;
+}
+
+.header-section h1 {
+    font-size: 2.8rem;
+    color: var(--bg-color);
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.header-section > p {
+    width: 71%;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    color: var(--header-text-color);
+}
+
+.line {
+    display: block;
+    height: 1px;
+    width: 80%;
+    background-color: #e6e6e6;
+    margin-bottom: 40px;
+}
+
+.form-title {
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--form-heading-color);
+    padding-bottom: 32px;
+}
+
+.first-row,
+.second-row,
+.third-row {
+    display: flex;
+    gap: 48px;
+}
+
+.first-row div,
+.second-row div,
+.third-row div{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.first-row div > label,
+.second-row div > label,
+.third-row div > label {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--form-heading-color);
+    margin-bottom: 8px;
+    display: block;
+}
+
+.first-row div > input,
+.second-row div > input,
+.third-row div > input{
+    display: block;
+    width: 280px;
+    padding: 4px 8px;
+    outline: none;
+    border: 2px solid #cccccc;
+    font-size: 1.03rem;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    color: var(--header-text-color);
+}
+
+.first-row div > input:focus,
+.second-row div > input:focus,
+.third-row div > input:focus {
+    outline: 2px solid var(--bg-color);
+    border: none;
+    box-shadow: 1px 1px 5px rgba(56, 51, 92, 0.678);
+}
+
+.second-row div > input[type="email"]:valid {
+    
+}
+
+.form-footer {
+    padding-top: 20px;
+}
+
+.form-footer button{
+    display: block;
+    font-weight: 500;
+    font-size: 1.15rem;
+    padding: 10px 20px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    background-color: var(--bg-color);
+    color: white;
+    box-shadow: 2px 5px 10px rgba(56, 51, 92, .2);
+    cursor: pointer;
+}
+
+.form-footer p {
+    padding-top: 20px;
+    font-size: 1.06rem;
+    font-weight: 500;
+    color: var(--form-heading-color);
+}
+
+.form-footer p > a {
+    color: var(--bg-color);
+}
+
+.form-footer p > a:hover {
+    text-decoration: underline;
+}
