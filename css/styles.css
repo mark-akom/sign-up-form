@@ -84,6 +84,10 @@ a {
     padding: 80px 0;
     width: 100%;
     padding-left: calc(37% + 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .header-section {
@@ -151,6 +155,7 @@ a {
     display: block;
     width: 280px;
     padding: 4px 8px;
+    /* padding-right: ; */
     outline: none;
     border: 2px solid #cccccc;
     font-size: 1.03rem;
@@ -162,13 +167,29 @@ a {
 .first-row div > input:focus,
 .second-row div > input:focus,
 .third-row div > input:focus {
-    outline: 2px solid var(--bg-color);
-    border: none;
+    border: 2px solid var(--bg-color);
     box-shadow: 1px 1px 5px rgba(56, 51, 92, 0.678);
 }
 
-.second-row div > input[type="email"]:valid {
-    
+.second-row div > input[type="email"]:valid,
+.second-row div > input[type="tel"]:valid,
+.third-row div > input[type="password"]:valid,
+.first-row div > input[type="text"]:valid  {
+    border: 2px solid green;
+}
+
+.second-row div input[type="email"]:valid + span::after,
+.second-row div input[type="tel"]:valid + span::after,
+.first-row div input[type="text"]:valid + span::after,
+.third-row div input[type="password"]:valid + span::after  {
+    position: absolute;
+    content: "✓";
+    color: green;
+    top: 33px;
+    right: 8px;
+    font-size: 1.2rem;
+    background-color: white;
+    z-index: 1;
 }
 
 .form-footer {
